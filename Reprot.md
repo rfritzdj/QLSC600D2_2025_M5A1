@@ -1,10 +1,5 @@
 # Reproducibility of Papers on Different Fields
 Authors:
 
-## Introduction
+## Notes
 
-## Methods
-
-## Results
-
-## Conclusion
