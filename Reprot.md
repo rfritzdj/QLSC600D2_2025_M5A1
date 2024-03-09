@@ -44,6 +44,31 @@ The title of the paper, "Linking the resistome and plasmidome to the microbiome"
 Software used was provided, though exact versions used were not always described. Analyses of the Hi-C libraries were performed using a proprietary pipeline developed by the private research partner and was acknowledged in the paper. Not all of the equipment and reagents used were described in enough detail in the methods section, for example, the make and model of the flow cytometer used for cell counts was not described nor the "R2A agar" media for colony forming unit (CFU) counts was not provided with a recipe list nor the commercial vendor (if applicable). 
 
 ## Genetics
-## Paper 6: Cartography of opportunistic pathogens and antibiotic resistance genes in a tertiary hospital environment (2020)
+## Paper 6: Human genetics evidence supports two-thirds of the 2021 FDA-approved drugs (2022)
+### Data availability and accessibility
+The paper was originally published in Nature Reviews Drug Discovery under the biobusiness briefs section. The codes are accessible, with the link provided in the article. However, the platform used to store their data is unavailable.
 
+### Quality of experimental design	
+The study aims to find genetic support for FDA-approved drugs. For the experimental design, it utilized 15 different databases to identify evidence.
 
+### Description of methods	
+The methods are explained in the supplementary documents. Initially, Drug IDs were converted to Gene IDs, followed by leveraging 15 different genetic resources as integrated by the Open Targets Platform. Related traits to the drug indication were manually included, with the availability of genetic evidence for the drug target.
+
+### Description of sample population/data under study	
+They used 15 different genetic resources, which is very comprehensive and covers a wide range.
+
+### Tool accessibility 
+The code and data are available online, but the software used to store their data, known as "spark," is not accessible without Google Cloud storage, which requires payment.
+
+## Paper 7: An effector index to predict target genes at GWAS loci (2021)
+### Data availability and accessibility
+
+### Quality of experimental design	
+
+### Description of methods	
+
+### Description of sample population/data under study	
+
+### Tool accessibility 
+
+### Replicability 
