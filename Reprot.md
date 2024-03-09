@@ -42,3 +42,8 @@ The title of the paper, "Linking the resistome and plasmidome to the microbiome"
 
 ### Tool accessibility 
 Software used was provided, though exact versions used were not always described. Analyses of the Hi-C libraries were performed using a proprietary pipeline developed by the private research partner and was acknowledged in the paper. Not all of the equipment and reagents used were described in enough detail in the methods section, for example, the make and model of the flow cytometer used for cell counts was not described nor the "R2A agar" media for colony forming unit (CFU) counts was not provided with a recipe list nor the commercial vendor (if applicable). 
+
+## Genetics
+## Paper 6: Cartography of opportunistic pathogens and antibiotic resistance genes in a tertiary hospital environment (2020)
+
+
