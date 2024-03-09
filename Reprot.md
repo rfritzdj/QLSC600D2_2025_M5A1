@@ -44,6 +44,37 @@ The title of the paper, "Linking the resistome and plasmidome to the microbiome"
 Software used was provided, though exact versions used were not always described. Analyses of the Hi-C libraries were performed using a proprietary pipeline developed by the private research partner and was acknowledged in the paper. Not all of the equipment and reagents used were described in enough detail in the methods section, for example, the make and model of the flow cytometer used for cell counts was not described nor the "R2A agar" media for colony forming unit (CFU) counts was not provided with a recipe list nor the commercial vendor (if applicable). 
 
 ## Genetics
-## Paper 6: Cartography of opportunistic pathogens and antibiotic resistance genes in a tertiary hospital environment (2020)
+## Paper 6: Human genetics evidence supports two-thirds of the 2021 FDA-approved drugs (2022)
+### Data availability and accessibility
+The paper was originally published in Nature Reviews Drug Discovery under the biobusiness briefs section. The codes are accessible, with the link provided in the article. However, the platform used to store their data is unavailable.
 
+### Quality of experimental design	
+The study aims to find genetic support for FDA-approved drugs. For the experimental design, it utilized 15 different databases to identify evidence.
 
+### Description of methods	
+The methods are explained in the supplementary documents. Initially, Drug IDs were converted to Gene IDs, followed by leveraging 15 different genetic resources as integrated by the Open Targets Platform. Related traits to the drug indication were manually included, with the availability of genetic evidence for the drug target.
+
+### Description of sample population/data under study	
+They used 15 different genetic resources, which is very comprehensive and covers a wide range.
+
+### Tool accessibility 
+The code and data are available online, but the software used to store their data, known as "spark," is not accessible without Google Cloud storage, which requires payment.
+
+## Paper 7: An effector index to predict target genes at GWAS loci (2021)
+### Data availability and accessibility
+The paper discusses the development of the effector index, utilizing GWAS summary statistics or individual-level genetic data. All data and code mentioned in the original paper are accessible online, although the data preprocessing and evaluation codes used is not provided. Positive control genes for evaluation were sourced from databases such as the Human Disease Ontology database, OMIM linkage information, and a study by Morris et al. Additionally, GWAS summary statistics were gathered from various publicly available resources and through GWAS conducted on UK Biobank traits. The paper thoroughly identifies all other data sources utilized in the study.
+
+### Quality of experimental design	
+The experimental design is clearly delineated, with each step thoroughly explained. Hyperparameters in XGBoost, such as tree depth, lambda, and gamma, were fine tuned to optimize cross-validated performance on training data. Performance evaluation was conducted using the area under both receiver operating characteristic curves (AUC-ROC) and precision-recall curves (AUC-PRC) on test datasets, ensuring comprehensive assessment of model effectiveness.
+
+### Description of methods	
+They provided a detailed flowchart of the method, which begins with fine-mapping of GWAS summary statistics, followed by annotation of single nucleotide variants (SNVs) to identify potential causal variants and their association with genes within or near the GWAS loci. Subsequently, these data are leveraged to generate gene- and locus-level features, integrating information on the presence of specific SNVs within genes, their functional implications, and locus-specific characteristics. Feature weights within the models are determined through leave-one-out analysis, facilitating the assessment of model robustness and generalizability. The performance of the models is then evaluated by predicting target genes for loci containing positive control genes, with comparisons made to known positive control genes. This evaluation aims to measure the model's accuracy in identifying true target genes while minimizing false positives and false negatives, thus providing insights into its effectiveness in prioritizing genes at GWAS loci.
+
+### Description of sample population/data under study	
+The data utilized in the study consists of GWAS data associated with 12 common traits. These traits include Type 2 diabetes, estimated bone mineral density, diastolic blood pressure, height, hypothyroidism, red blood cell count, systolic blood pressure, calcium, direct bilirubin, glucose, low-density lipoprotein, and triglycerides. This diverse range of phenotypes or conditions provides a comprehensive dataset for the analysis and development of the effector index discussed in the study.
+
+### Tool accessibility 
+The tools required for the study are publicly available, although the algorithm is implemented in a mixture of Shell and R. Despite their availability, the absence of a guideline or readme file may pose challenges in utilizing these tools effectively. This lack of documentation could potentially hinder users' ability to understand and apply the algorithm, thus reducing its accessibility and usability. 
+
+### Replicability 
+The algorithm utilized in the study can be replicated for use with GWAS data associated with different traits. However, replicating the data preprocessing steps may present challenges as the code for this process is not provided. Lack of access to the preprocessing code could hinder the replicability of the study, as it may be difficult for other researchers to precisely reproduce the initial data preparation steps. Providing the preprocessing code or detailed instructions would enhance the replicability of the study and facilitate its adoption by other researchers interested in utilizing similar GWAS datasets.
