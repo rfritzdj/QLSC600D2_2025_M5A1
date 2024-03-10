@@ -49,6 +49,26 @@ Software used was provided, though exact versions used were not always described
 ### Data availability and accesibility
 This paper is published under open access. A key resource table is provided which lists all reagents, bacteria strains, data and software etc., their source and identifier (if applicable). Fluorescence imaging dataset is published and openly available on Mendeley. Links are provided to the sources of the code and softwares used, however one of the softwares is reported to be no longer supported. Contact information is provided for the lead author along with a statement acknowledging information will be provided upon request if needed to reanalyze the data. A statement is provided acknoledging that all strains generated in the study will be provided upon request. All this information was provided in a section called STAR Methods. STAR stands for Structured, Transparent, Accessible Reporting. This is a methods format introduced in 2016 that has been adopted by all Cell Press journals (https://www.cell.com/star-authors-guide).
 
+### Quality of experimental design
+- Sequencing was performed on the constructs as validation
+- Bootstrapping analysis is performed to calculate fitting errors for the D* distributions
+
+### Description of methods
+- There is a clear, specific description of the methods used to create each new bacterial strain. For construction procedures that are well known, references are provided to early papers that give in depth details of the procedure. A supplemental table is also provided outlining the names of each strain, their use for the paper and their genotype.
+- The methods described for immunoblotting contained specific details regarding temperatures, times, volumes, and reagents. I have not performed immunoblotting but I feel that the methods described here are specific enough that I would be confident with replicating the procedure.
+- Cell preparation methods go into very specific details, explicitly stating all variables invovled in this process
+- For single molecule imaging, the various parts of the custom built microscope (lasers, camera, objectives, modulators, etc.) were explicitly stated along with their respective provider and identifying code. Additionally the acquisition details were provided.
+- SIM imaging acquisition details were described in depth. Additionally, references are provided directing to papers with further details on the 3D imaging procedure.
+- For single molecule tracking analysis a reference is provided to a previous paper where the same method was used. A brief description is also provided, while the methods in the previous paper are in great depth.
+
+### Description of sample population/data under study	
+
+
+### Tool accessibility
+- The microscope used for single-molecule tracking PALM is custom built, thus it is not easily accessible unless you are located at their institution (Oxford). A detailed description regarding the microscopes specs was provided which allows people to identify a commercial microscope that is comparable.
+- The microscope used for SIM imaging is commercial - more accessible than custom built
+- Single molecule localizations performed with custom software
+- As previously stated, links are provided for open access code and software that were used for analysis.
 
 ## Genetics
 ## Paper 6: Cartography of opportunistic pathogens and antibiotic resistance genes in a tertiary hospital environment (2020)
