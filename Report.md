@@ -78,3 +78,32 @@ The tools required for the study are publicly available, although the algorithm 
 
 ### Replicability 
 The algorithm utilized in the study can be replicated for use with GWAS data associated with different traits. However, replicating the data preprocessing steps may present challenges as the code for this process is not provided. Lack of access to the preprocessing code could hinder the replicability of the study, as it may be difficult for other researchers to precisely reproduce the initial data preparation steps. Providing the preprocessing code or detailed instructions would enhance the replicability of the study and facilitate its adoption by other researchers interested in utilizing similar GWAS datasets.
+
+### Molecular Biology
+## Paper 1 (LH): Single-molecule tracking reveals the functional allocation, in vivo interactions, and spatial organization of universal transcription factor NusG (2024)
+
+### Data availability and accesibility
+This paper is published under open access. A key resource table is provided which lists all reagents, bacteria strains, data and software etc., their source and identifier (if applicable). Fluorescence imaging dataset is published and openly available on Mendeley. Links are provided to the sources of the code and softwares used, however one of the softwares is reported to be no longer supported. Contact information is provided for the lead author along with a statement acknowledging information will be provided upon request if needed to reanalyze the data. A statement is provided acknoledging that all strains generated in the study will be provided upon request. All this information was provided in a section called STAR Methods. STAR stands for Structured, Transparent, Accessible Reporting. This is a methods format introduced in 2016 that has been adopted by all Cell Press journals (https://www.cell.com/star-authors-guide).
+
+### Quality of experimental design
+- Sequencing was performed on the constructs as validation
+- Bootstrapping analysis is performed to calculate fitting errors for the D* distributions
+- In the methods there is a statement claiming experimental repeats were performed for each condition to define the reproducibility of the results however I don't see anywhere in the paper where this reproducibility is quantified.
+- Many conditions were tested to solidify their conlcusions regarding the different NusG populations and their corresponding functions/interactions. For each of these conditions a similar number of NusG molecules were observed (order of 10 000), maintaining similar statistical power for each measurement. For example, when characterizing the fast population, three different conditions were measured improving the robustness of their conclusions (as oppose to making a conclusion from one condition).
+
+### Description of methods
+- There is a clear, specific description of the methods used to create each new bacterial strain. For construction procedures that are well known, references are provided to early papers that give in depth details of the procedure. A supplemental table is also provided outlining the names of each strain, their use for the paper and their genotype.
+- The methods described for immunoblotting contained specific details regarding temperatures, times, volumes, and reagents. I have not performed immunoblotting but I feel that the methods described here are specific enough that I would be confident with replicating the procedure.
+- Cell preparation methods go into very specific details, explicitly stating all variables invovled in this process
+- For single molecule imaging, the various parts of the custom built microscope (lasers, camera, objectives, modulators, etc.) were explicitly stated along with their respective provider and identifying code. Additionally the acquisition details were provided.
+- SIM imaging acquisition details were described in depth. Additionally, references are provided directing to papers with further details on the 3D imaging procedure.
+- For single molecule tracking analysis a reference is provided to a previous paper where the same method was used. A brief description is also provided, while the methods in the previous paper are in great depth.
+
+### Description of sample population/data under study	
+This study is examining the dynamics of NusG (a molecule) in E. coli to make inferences about the different NusG populations and their abundance. One could thus claim that the sample population is the NusG molecules. For each distribution that was reported the number of NusG molecules contributing to the distribution was reported in the figure caption which averaged around 40 000. These molecules were sampled from many E. coli cells (order of hundreds) in multiple fields of view (not specified numerically). For this type of study, I would claim that the sample population is representative (not just collected from one experiment/ one field of view / one experiment). One improvement would be including the number of fields of view and experimental repeats with the statement made in the Quantification and Statistical Analysis statement. 
+
+### Tool accessibility
+- The microscope used for single-molecule tracking PALM is custom built, thus it is not easily accessible unless you are located at their institution (Oxford). A detailed description regarding the microscopes specs was provided which allows people to identify a commercial microscope that is comparable.
+- The microscope used for SIM imaging is commercial - more accessible than custom built
+- Single molecule localizations performed with custom software
+- As previously stated, links are provided for open access code and software that were used for analysis.
