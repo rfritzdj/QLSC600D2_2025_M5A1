@@ -52,6 +52,8 @@ This paper is published under open access. A key resource table is provided whic
 ### Quality of experimental design
 - Sequencing was performed on the constructs as validation
 - Bootstrapping analysis is performed to calculate fitting errors for the D* distributions
+- In the methods there is a statement claiming experimental repeats were performed for each condition to define the reproducibility of the results however I don't see anywhere in the paper where this reproducibility is quantified.
+- Many conditions were tested to solidify their conlcusions regarding the different NusG populations and their corresponding functions/interactions. For each of these conditions a similar number of NusG molecules were observed (order of 10 000), maintaining similar statistical power for each measurement. For example, when characterizing the fast population, three different conditions were measured improving the robustness of their conclusions (as oppose to making a conclusion from one condition).
 
 ### Description of methods
 - There is a clear, specific description of the methods used to create each new bacterial strain. For construction procedures that are well known, references are provided to early papers that give in depth details of the procedure. A supplemental table is also provided outlining the names of each strain, their use for the paper and their genotype.
@@ -62,7 +64,7 @@ This paper is published under open access. A key resource table is provided whic
 - For single molecule tracking analysis a reference is provided to a previous paper where the same method was used. A brief description is also provided, while the methods in the previous paper are in great depth.
 
 ### Description of sample population/data under study	
-
+This study is examining the dynamics of NusG (a molecule) in E. coli to make inferences about the different NusG populations and their abundance. One could thus claim that the sample population is the NusG molecules. For each distribution that was reported the number of NusG molecules contributing to the distribution was reported in the figure caption which averaged around 40 000. These molecules were sampled from many E. coli cells (order of hundreds) in multiple fields of view (not specified numerically). For this type of study, I would claim that the sample population is representative (not just collected from one experiment/ one field of view / one experiment). One improvement would be including the number of fields of view and experimental repeats with the statement made in the Quantification and Statistical Analysis statement. 
 
 ### Tool accessibility
 - The microscope used for single-molecule tracking PALM is custom built, thus it is not easily accessible unless you are located at their institution (Oxford). A detailed description regarding the microscopes specs was provided which allows people to identify a commercial microscope that is comparable.
