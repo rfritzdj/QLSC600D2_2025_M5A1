@@ -107,3 +107,50 @@ This study is examining the dynamics of NusG (a molecule) in E. coli to make inf
 - The microscope used for SIM imaging is commercial - more accessible than custom built
 - Single molecule localizations performed with custom software
 - As previously stated, links are provided for open access code and software that were used for analysis.
+
+## Computational Neuroscience
+## Paper 1 (RFJ): Go with the FLOW: visualizing spatiotemporal dynamics in optical widefield calcium imaging (2021)
+
+### Data availability and accessibility
+All data and code presented in this paper are publicly available (open access). You can access the data and code repository at the following link: https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0523#d1e2672. The repository includes both the code used in the experiments and the associated data, encompassing both raw and processed datasets, all openly accessible.  Additionally, supplementary videos have been provided for result comparisons mentioned in the paper. Some of the data sources are referenced in another paper co-authored by one of the contributors to this study.
+
+### Quality of experimental design	
+
+This paper relies on algorithmic outputs applied to available data for its results. The chosen sample size appears reasonable for conducting a statistical analysis; however, concerns arise regarding the statistical methods employed. Specifically, a pairwise t-test was conducted on the distribution of ridges derived from their code, yet the rationale for choosing this test method remains unclear. Notably, the t-test typically assumes normal distribution of data, a point unaddressed in their explanation.
+
+Furthermore, the reported small p-value, emphasized as validating the assertion of changes in brain dynamics for older mouse pups, raises skepticism. It is unclear whether the small p-value results from the inherent minuteness of the effect or if it genuinely reflects statistical significance. Compounding this, the authors lack a substantial dataset for comparison, as evidenced by their use of mean values to calculate a p-value on the order of 10^(-4). These factors contribute to ongoing reservations about the robustness and generalizability of the statistical findings.  
+
+### Description of methods	
+This paper primarily delves into the implementation of a specific algorithm applied to mouse brain datasets, with emphasis on elucidating the underlying principles and mathematical theory governing the code's functionality. However, the conceptual explanation assumes a degree of familiarity with fluid dynamics, making it somewhat challenging for those without intensive training in the field.
+Regarding the dataset, the authors provide references for additional insights into the mouse population details. The methods for the surgical procedures during widefield imaging are meticulously outlined, along with specific information on the employed calcium indicators. Despite these clarifications, certain steps, particularly those related to the type of brain activity analyzed in the mouse pup dataset, remain ambiguous. Additionally, the absence of a paper explicating the data gathering process for the mouse pup dataset raises questions.
+
+
+### Description of sample population/data under study	
+
+Two distinct categories of mice were involved in the analysis of their brain activity. The first group comprised mouse pups, with ages specified to be a maximum of 8 days postnatal, providing a comprehensive description of the age range for this subset. In contrast, the adult mouse dataset delineated both the age (approximately 30 weeks) and gender (male) in explicit detail within the paper.
+
+### Tool accessibility 
+
+The code is open acces and was released under the permissive license, granting users the freedom to use, modify, distribute, and sublicense with minimal restrictions. The code was sufficiently documented and seemed to be directly usable. Papers were also cited in order to understand further the underlying theory behind the algorithm constructed. 
+
+
+## Paper 2 (RFJ): Optical-flow analysis toolbox for characterization of spatiotemporal dynamics in mesoscale optical imaging of brain activity (2017)
+
+### Data availability and accessibility
+The paper is easily accessible because it’s open access. In this paper, the authors used optical flow analysis tools and custom source and sink locators to investigate synthetic moving stimuli and mouse brain activity in the FLS1 and FLS2 regions. Supplementary videos showing the application of these tools to the analyzed videos were provided alongside the paper. While these videos offer practical insights, having access to raw data would be useful in comprehending the nuances of the delta F/F calculation and its consequent effects. The inclusion of raw data would enhance the transparency of the methodology, enabling a more thorough exploration of the analysis outcomes.
+
+### Quality of experimental design	
+The study revolves around a MATLAB toolbox developed by the authors for extracting velocity vectors to analyze brain activity propagation on the cortex using optic flow. The paper concentrates on elucidating the principles behind calculating time-varying velocity fields, their MATLAB implementation, and an assessment of the algorithm's performance. In the evaluation phase, the authors conducted a thorough comparison of velocity fields and angles, basing their analysis on theoretical parameters implemented in synthetic data. The assessment involved the application of the Horn-Shunck Algorithm, CLG method, and TS method. Despite featuring the CLG method, the authors candidly acknowledged its limitations within the analysis framework.
+The evaluation methodology displayed objectivity, encompassing a systematic comparison of the algorithm's performance against theoretical velocities. Notably, the authors measured the discrepancy between the toolbox-generated output and the theoretically expected velocities, contributing to a comprehensive assessment. The study's practicality was further demonstrated by testing the toolbox's resilience to noise inherent in widefield imaging data. Incorporating noisy data into the evaluation showcased the algorithm's robustness, adding a valuable dimension to its applicability in real-world scenarios. 
+
+### Description of methods	
+The paper provides a comprehensive and detailed explanation of the algorithms employed, except for the TS method. The TS method was simply explained in the paper, however, it was not quite informative. While the code is available and well-documented, a visual representation of the TS Method workflow could serve as a valuable supplement, facilitating a clearer grasp of its functioning.
+Concerning the methods for finding sources and sinks, the explanations appeared straightforward in the paper but seemed more complex in the code. For instance, the determination of the Poincare index lacked clarity regarding the type of neighborhood used in the calculation, and there was a noticeable absence of explicit mathematical equations. This omission made it challenging to fully comprehend the process. Additionally, the paper did not elaborate on why a 2x2 sub-array was chosen as the optimal method for identifying sources and sinks, leaving this aspect unclear.
+
+### Description of sample population/data under study	
+
+The paper notably lacks detailed descriptions of the mice used for widefield imaging, a gap that can be understood given the paper's primary focus on testing the toolbox for sampling brain activity and demonstrating the algorithm's effectiveness with synthetic datasets. The synthetic datasets employed in the study successfully capture fundamental stimulus behaviors, including horizontal and radial propagation, source and sink simulation, and shape translation. The emphasis on these synthetic datasets aligns with the paper's objectives, providing a controlled environment to showcase the toolbox's capabilities in handling various scenarios and validating its algorithmic performance. While the absence of detailed mouse descriptions may be justified in the context of the study's scope, future research or applications could benefit from incorporating additional details about the experimental subjects for a more comprehensive understanding of the study's context and potential real-world applications.
+
+### Tool accessibility 
+
+The authors have made their code openly accessible and distributed it, including the optic flow methods, and have even developed a user-friendly graphic interface named OFAMM for ease of use. While the methods for calculating sources and sinks lack explicit documentation, the provided steps on how to utilize the toolbox facilitate its application. The paths and names of saved files generated from the algorithm were also indicated for easier navigation through the outputs of the toolbox.
